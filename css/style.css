@@ -1,3 +1,7 @@
+body {
+  background-color: #babbbb;
+}
+
 /* jumbotron style */
 .jumbotron {
     background-color: #d7dadd ;
@@ -7,27 +11,34 @@ ul {
     list-style: none;
   }
 
-body {
-    background-color: #E9ECEF;
-}
 
 /* all img size */
 img {
     width: 280px;
-    margin-top: 20px;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+}
+
+img:not(:hover) {
+  transition: 1s ease-in-out;
 }
 
 /* card img container */
 .card-img-container{
     height: 370px;
-    text-align: center;
     background-color: #60aed4;
     border-radius: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* cards positions and places style */
 .col-sm-4 {
-    margin-bottom: 15px;
+    margin: 25px 0;
     display: flex;
     align-items: stretch;
 }
@@ -50,11 +61,14 @@ img {
 }
 
 footer {
+    margin: 20px 0;
+    padding: 20px 0;
     background-color: #f9f9f9;
-    padding: 20px;
     text-align: center;
     color: #777;
     font-size: 14px;
+    background-color: black;
+    border-radius: 20px 20px 0 0;
   }
 
   .footer-content {
